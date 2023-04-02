@@ -1,0 +1,30 @@
+//Declaring vector of pairs 
+include<bits/stdc++.h> 
+using namespace std;
+int main()
+{
+  vector< pair <int,int> > vect;
+  int arr[] = {10, 20, 5, 40 }; 
+  int arr1[] = {30, 60, 20, 50}; 
+  int n = sizeof(arr)/sizeof(arr[0]); 
+  for (int i=0; i<n; i++)
+  vect.push_back( make_pair(arr[i],arr1[i]) ); 
+  // Using simple sort() function to sort 
+  sort(vect.begin(), vect.end());  
+  for (int i=0; i<n; i++) 
+  { 
+    cout << vect[i].first << " "<< vect[i].second << endl;
+  }
+}
+//Deleting Repeating Element in vector in two lines
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  vector v{30,20,30,10,15};
+  sort(vect.begin(),vect.end());
+  vect.erase(unique(vect.begin(),vect.end()),vect.end());
+  int n = sizeof(arr)/sizeof(arr[0]);
+  for (int i=0; i<n; i++)
+  cout << vect[i] << " ";
+}
